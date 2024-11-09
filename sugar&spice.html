@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Registration Page</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f6c4d0; /* Baby pink background */
+      background-image: url('https://cdn.pixabay.com/photo/2018/03/02/20/12/doodle-3192844_960_720.png'); /* Cute doodle background */
+      background-size: 50%; /* Scale the doodle image */
+      background-repeat: repeat; /* Ensure doodles repeat */
+      background-position: center; /* Center the image */
+    }
+
+    /* Registration Form Container */
+    .registration-form {
+      background: rgba(255, 255, 255, 0.8); /* Light background with slight transparency */
+      color: #333;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 380px;
+      position: relative;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #ff4081; /* Light pink color for the heading */
+    }
+
+    /* Input Fields */
+    .registration-form input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+    }
+
+    .registration-form input:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(255, 64, 129, 0.5); /* Soft pink focus effect */
+    }
+
+    /* Submit Button */
+    .registration-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #d81b60; /* Dark pink */
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .registration-form button:hover {
+      background-color: #c2185b; /* Darker pink on hover */
+    }
+
+    /* Footer Links */
+    .registration-form .footer {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .registration-form .footer a {
+      color: #ff4081;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .registration-form .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 400px) {
+      .registration-form {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="registration-form">
+    <h2>Register</h2>
+    <form>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="footer">
+      Already have an account? <a href="#">Login here</a>
+    </div>
+  </div>
+
+</body>
+</html>
